@@ -2,7 +2,11 @@ import React from "react";
 import SongsList from "../../redux/containers/SongsList";
 
 const MainPage = () => {
-  return <SongsList />;
+  return (
+    <React.Fragment>
+      <SongsList />
+    </React.Fragment>
+  );
 };
 
 export default MainPage;

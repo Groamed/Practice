@@ -13,7 +13,7 @@ class Authentication extends Component {
     if (isUserLogged) {
       localStorage.setItem(
         "user",
-        JSON.stringify({ id: user.id, name: user.name })
+        JSON.stringify({ id: user.id, name: user.name, list: user.list })
       );
       this.props.history.push("/");
     }

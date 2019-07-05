@@ -33,6 +33,10 @@ export const auth = (id, name, list) => ({
   type: "LOGIN"
 });
 
+export const logout = () => ({
+  type: "LOGOUT"
+});
+
 export const fetchSongsStart = () => ({
   type: "FETCH_SONGS_START"
 });
@@ -45,4 +49,9 @@ export const fetchSongsSuccess = data => ({
 export const fetchSongsError = error => ({
   error,
   type: "FETCH_SONGS_ERROR"
+});
+
+export const filter = name => ({
+  name,
+  type: "FILTER"
 });
